@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#9acd32">
+<center>
+<table border="2">
+
+    <tr><th>productid</th><th>productname</th><th>productcost</th><th>productmfdt</th><th>productexpdt</th></tr>
+    {% for p in records %}
+    <tr><th>{{ p.productid }}</th>
+        <th>{{ p.productname }}</th>
+        <th>{{ p.productcost }}</th>
+        <th>{{ p.productmfdt }}</th>
+        <th>{{ p.productexpdt }}</th>
+        {% endfor %}
+    </tr>
+
+</table>
+</center>
+
+</body>
+</html>

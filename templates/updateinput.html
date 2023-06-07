@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="yellow">
+<form action="./updatedetails" method="get" >
+   SELECT PRODUCT ID NUMBER TO UPDATE:: <select name="t1">
+        {% for p in records %}
+        <option value="{{ p.productid }}">{{ p.productid }}</option>
+        {% endfor %}
+
+    </select><br>
+<input type="submit" value="getdetails">
+
+</form>
+
+</body>
+</html>

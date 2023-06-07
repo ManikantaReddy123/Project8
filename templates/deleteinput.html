@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="red">
+<center>
+<form action="./delete" method="get">
+
+  SELECT THE PRODUCTID TO DELETE  <select name="t1">
+        {% for p in records %}
+        <option value="{{ p.productid }}">{{ p.productid }}</option>
+                {% endfor %}
+    </select><br>
+<input type="submit" value="Delete">
+
+</form>
+</center>
+
+</body>
+</html>

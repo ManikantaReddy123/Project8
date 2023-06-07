@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="red">
+<form action="./update">
+    Productid:<input type="text" name="t1" value="{{ rec.productid }}"><br>
+      Productname:<input type="text" name="t2" value="{{ rec.productname }}"><br>
+    Productcost:<input type="text" name="t3" value="{{ rec.productcost }}"><br>
+    Productmfdt:<input type="text" name="t4" value="{{ rec.productmfdt| date:"Y-m-d"}}"><br>
+    Product expdt:<input type="text" name="t5" value="{{ rec.productexpdt|date:"Y-m-d" }}"><br>
+<input type="submit" value="update">
+
+</body>
+</html>
